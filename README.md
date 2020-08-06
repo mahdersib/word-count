@@ -1,4 +1,4 @@
-#Word Count Web application
+# Word Count Web application
 
 This project is build using spring boot, spring mvc, jsp JPA and h2 DB. 
 
