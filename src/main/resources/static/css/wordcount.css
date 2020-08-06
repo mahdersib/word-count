@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+input{
+    margin-bottom:5px;
+}
+.frm {
+    float: bottom;
+    float: right;
+}
+#order {
+    display: block;
+}
