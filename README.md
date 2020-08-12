@@ -9,7 +9,11 @@ mvn clean install
 Go to WordCountApp class in src folder and run the main method.
  
 ## Run web application
+### Using Maven
 mvn spring-boot:run
+
+### Using Docker 
+docker-compose up --build
 
 ## View web application 
 http://localhost:8080/wordcount
