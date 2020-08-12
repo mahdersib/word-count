@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix = "wc" uri = "../title.tld"%>
 <link href="css/wordcount.css" rel="stylesheet">
 <html lang="en">
 <head>
@@ -15,7 +16,7 @@
 <body>
 <div>
     <div>
-        <h1>Word Counter</h1>
+        <h1><wc:WordCounterTitleCustomTag/></h1>
         <form method="post" name="wordCountForm" onSubmit="return validateForm()">
             Inser the Text Here: <input type="text" name="textVal">
             <input type="submit" value="Words Count-Words Freq" name="orderbyFreq" id="order">
@@ -31,6 +32,9 @@
         <form method="post" name="clean DB" class="frm">
             <input type="submit" value="Clean Database" name="clean">
         </form>
+
+
+
     </div>
 </div>
 </body>
