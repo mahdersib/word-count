@@ -30,7 +30,7 @@ public class WordCountService {
 
     public String constructStringToBeDisplayed(String textValue, String orderType){
         StringBuilder orderedWordsCount = new StringBuilder();
-        String patternString = "[\\s.:$,#*!]+";
+        String patternString = "[^A-Za-z0-9]+";
         Pattern pattern = Pattern.compile(patternString);
         String[] wordsArray = pattern.split(textValue);
         Map<String,Integer> wordMap = Arrays.stream(wordsArray).collect(Collectors.groupingBy(Function.identity(), Collectors.summingInt(e -> 1)));
