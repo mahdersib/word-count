@@ -10,7 +10,7 @@ public class WordCountApp {
     public static void main(String args[]){
 
         String text = "This is a test input for a program:22 $$ history, one two#two or, three*three*three four!four!four!four story.";
-        String patternString = "[\\s.:$,#*!]+";
+        String patternString = "[^A-Za-z0-9]+";
 
         Pattern pattern = Pattern.compile(patternString);
         String[] wordsArray = pattern.split(text);
